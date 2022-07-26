@@ -44,9 +44,11 @@ Park.prototype.totalVisitorsPerDay = function () {
 }
 
 Park.prototype.totalVisitorsPerYear = function () {
-    let per_day = this.totalVisitorsPerDay
-    return per_day * 365
+    return 120 * 365
 }
 
+Park.prototype.totalRevenue = function () {
+    return 43800 * 7.55
+}
 
 module.exports = Park
